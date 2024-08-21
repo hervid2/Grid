@@ -1,0 +1,39 @@
+@import url(style.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: auto;
+}
+
+.grid-area{
+    display: grid;
+    width: 100%;
+    /* Grid de 4c x4r */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+    'header header header .'
+    'sidebar content content content'
+    'sidebar content content content'
+    'footer footer footer footer';
+
+}
+
+.header{
+    grid-area: header;
+    background-color: white;
+}
+.content{
+    grid-area: content;
+    background-color: steelblue;
+    
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color: brown;
+}
+.footer{
+    grid-area: footer;
+    background-color: violet;
+}

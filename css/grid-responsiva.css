@@ -1,0 +1,6 @@
+@import url(style.css);
+
+.grid-responsive{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,400px));
+}

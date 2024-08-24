@@ -1,0 +1,23 @@
+@import url(style.css);
+
+.grid-tracks{
+    display: grid;
+    /* Grid de 3c x 2r */
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(2, 200px);
+
+/* Eje horizontal (x) */
+    justify-content: start;
+    justify-content: end;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly;
+
+    /* Eje vertical (y) */
+    align-content: start;
+    align-content: end;
+    align-content: center;
+    align-content: space-between;
+    align-content: space-around;
+    align-content: space-evenly;
+}

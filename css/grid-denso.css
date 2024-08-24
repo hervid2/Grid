@@ -1,0 +1,26 @@
+@import url(style.css);
+
+.grid-flow-dense{
+    display: grid;
+    /* Grid 5c x 4r */
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 200px);
+    grid-auto-flow: column; 
+    /* grid-auto-flow: row dense; */
+
+    /* grid-auto-flow: column; */
+}
+
+.grid-flow-dense .item:nth-child(9){
+background-color: brown;
+color: #fff;
+/* grid-column: span 3; */
+/* grid-column-start: 1;
+grid-column-end: 2;
+grid-row-start: 2;
+grid-row-end: 3; */
+grid-column: 4 / 5;
+grid-row: 2 / 3;
+grid-column: span 3;
+ /* grid-row: span 3; */
+}
